@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    transform: translateX(500px);
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:both;
+background-image: url(../Imagenes/backimg.jpg);
+background-size: auto;
+}
+
+p{
+    padding: 30px; 
+    color: black;
+       font-family: "DM Sans";
+    font-size: 25px; 
+    background-color: rgb(230, 155, 198);
+    margin: 10px auto;
+    line-height: 23px;
+    padding: 3px;
+    transition: all 3s;
+    width: 80%;
+    height: 30px;
+
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border: 2 px dashed gray;
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    line-height: 23px;
+    padding: 3px;
+    transition: all 3s;
+
+}
+
+header a:hover{
+    background-color: rgb(255, 61, 132);
+    color: lightgreen;
+    border-color: lightpink;
+}
+main{
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+
+div{
+    background-color: white;
+    width: 33.33%;
+}
+
+img{
+    width: 100%;
+    box-shadow:2px 2px 2px rgba(0,0,0, 0.5);
+    transition: all 4s;
+}
+
+img:hover{
+
+    box-shadow:2px 2px 2px rgba(0,0,0, 0.5);
+    transform: rotateY(360deg) 
+  
+}
+#video{
+   width: 1%;
+   margin: 10px auto;
+}
+
+img,video{width: 100%;}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(227, 192, 216);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px;
+
+}
+
+@keyframes animacion {
+
+from {
+    
+    transform: translateX(200px);
+    background-color: fuchsia;
+
+
+}
+
+to  {transform: translateY(0px);
+    background-color: rgb(71, 160, 113);
+
+
+}
+
+
+}
+
